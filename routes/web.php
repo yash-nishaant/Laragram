@@ -49,6 +49,8 @@ Route::get('/p/{post}/comments', 'CommentsController@index');
 
 Route::post('/p/{post}/comment', 'CommentsController@store');
 
+Route::post('/comment/{post}', 'CommentsController@store');
+
 Route::get('/p/{post}/like', 'PostsController@getLike')->name('post.getlike');
 
 Route::get('/search', 'SearchController@getResults')->name('search.results');
